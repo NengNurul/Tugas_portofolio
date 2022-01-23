@@ -52,11 +52,26 @@ or
 composer update
 ```
 
+### Open Laragon
 
--Open Laragon
+
+### Manage file Env
 -create .env file
 -copy env file to .env
 -changed  Base Url, Host, Username, and password database in .env
+```
+app.baseURL = 'http://localhost:9091';
+
+database.default.hostname = localhost
+
+database.default.database = password_manager
+
+database.default.username = root
+
+database.default.password = 
+
+```
+
 -open database & create database your matching with setting .env
 -Migrate Database
 ```
