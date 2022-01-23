@@ -65,7 +65,7 @@ php spark migrate
 
 ## running your app
 ```
-php spark serve
+php spark serve --port  9091
 ```
 
 
