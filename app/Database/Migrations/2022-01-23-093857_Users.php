@@ -10,7 +10,7 @@ class Users extends Migration
 
     public function up()
     {
-        $sql = "CREATE TABLE `{ $this->table }` (
+        $sql = "CREATE TABLE `$this->table` (
             `user_id` INT(11) NOT NULL AUTO_INCREMENT,
             `username` VARCHAR(50) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
             `password` TEXT(65535) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
@@ -22,7 +22,7 @@ class Users extends Migration
 
     public function down()
     {
-        $sql = "DROP TABLE IF EXISTS `{ $this->table }`";
+        $sql = "DROP TABLE IF EXISTS `$this->table`";
 
         $this->db->query($sql);
     }
