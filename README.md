@@ -1,35 +1,36 @@
-#Step By Step
+# Step By Step
+First time make sure you have been clone your project in git ;
+```
+git clone http:.... ( copy in your project github )
+```
+
+## Tools
 
 
-##Tools
-
-
-###Install Laragon
+### Install Laragon
 ```
 https://github.com/leokhoa/laragon/releases/download/5.0.0/laragon-wamp.exe
 ```
 
 
-###Download Composer
+### Download Composer
 ```
 https://getcomposer.org/Composer-Setup.exe
 ```
 
 
-###Download HeidiSql
+### Download HeidiSql
 ```
 https://www.heidisql.com/installers/HeidiSQL_11.3.0.6295_Setup.exe
 ```
 
 
 
-###Upgrade to Php7.4
+### Upgrade to Php7.4
 -First Download Package php 7.4 in 
 ```
 https://windows.php.net/downloads/releases/php-7.4.27-Win32-vc15-x64.zip
 ```
-
-
 
 -step by step follow link : https://medium.com/@stephenjudeso/upgrading-to-php-7-4-laragon-862b9d204d0c
 -move file php7.4 has your download to your root laragon project/bin/php
@@ -39,7 +40,19 @@ https://windows.php.net/downloads/releases/php-7.4.27-Win32-vc15-x64.zip
 -click opsi php 
 -and then change to php version while you want
 
-##step running your app
+## step running your app
+### update & install composer in root project
+```
+    composer install
+```
+
+or
+
+```
+composer update
+```
+
+
 -Open Laragon
 -create .env file
 -copy env file to .env
@@ -50,11 +63,11 @@ https://windows.php.net/downloads/releases/php-7.4.27-Win32-vc15-x64.zip
 php spark migrate
 ```
 
-##running your app
+## running your app
 ```
 php spark serve
 ```
 
 
 
-##push your changed file in your git
+## push your changed file in your git
