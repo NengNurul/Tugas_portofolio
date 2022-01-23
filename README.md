@@ -41,7 +41,7 @@ https://windows.php.net/downloads/releases/php-7.4.27-Win32-vc15-x64.zip
 -and then change to php version while you want
 
 ## step running your app
-### update & install composer in root project
+### update & install composer in root project`
 ```
     composer install
 ```

@@ -10,7 +10,7 @@ class Managers extends Migration
 
     public function up()
     {
-        $sql = "CREATE TABLE `{ $this->table }` (
+        $sql = "CREATE TABLE `$this->table` (
             `manager_id` INT(11) NOT NULL AUTO_INCREMENT,
             `user_id` INT(11) NOT NULL DEFAULT '0',
             `source` VARCHAR(50) NOT NULL DEFAULT '0' COLLATE 'latin1_swedish_ci',
@@ -26,7 +26,7 @@ class Managers extends Migration
 
     public function down()
     {
-        $sql = "DROP TABLE IF EXIST `{ $this->table }`";
+        $sql = "DROP TABLE IF EXIST `$this->table`";
 
         $this->db->query( $sql );
     }
